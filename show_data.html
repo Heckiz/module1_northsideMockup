@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title> Comentarios enviados </title>
+</head>
+<body>
+<p align = center> & nbsp; </p>
+<h1 align = center> <font size = "+ 1"> La siguiente información ha sido enviada como su
+  comentarios: </font> </h1>
+
+<table border = "1" align = center width = "226">
+  <tr>
+    <th align = "center"> Campo de formulario </th>
+    <th align = "center"> Valor del campo </th>
+  </tr>
+
+<script language = "javascript">
+var args = location.search.substr (1) .split ('&');
+para (var i = 0; i <args.length; ++ i) {
+  var parts = args [i] .split ('=');
+  si (partes! = nulo) {
+    campo var = partes [0];
+    valor var = partes [1];
+    if (valor == nulo) {
+      valor = "nulo"
+    }
+    else {
+      value = '"' + unescape (value.replace (/ \ + / g, '')) + '"';
+    }
+
+    document.writeln ('<tr> <td align = "center">' + field + '</td>');
+    document.writeln ('<td align = "center">' + value + '</td> </tr>');
+  }
+}
+</script>
+
+<noscript>
+<tr> <td>
+<p> Debes activar Javascript en tu navegador. </p>
+
+<p> En Microsoft Internet Explorer 4 o superior: </p>
+<ul>
+<li> Desde el menú "Herramientas" (en IE 4, es el menú "Ver"), selecciona "Opciones de Internet". </li>
+<li> Haz clic en la pestaña "Seguridad". </li>
+<li> Haz clic en el botón "Nivel personalizado". (En IE 4, seleccione "Personalizado"
+y luego haga clic en "Configuración ...".) </li>
+<li> En "Active scripting", asegúrese de que "Enable" esté seleccionado. </li>
+</ul>
+
+<p> En Netscape versión 4 o superior: </p>
+<ul>
+<li> En el menú <b> Editar </b>, selecciona <b> Preferencias </b>. </li>
+<li> En la lista <b> Categoría </b> a la izquierda, haga clic en la palabra "Avanzado". </li>
+<li> En el panel de la derecha, asegúrate de que la opción "Habilitar JavaScript" esté marcada. </li>
+<li> Haz clic en el botón <b> Aceptar </b>. </li>
+</ul>
+
+</td> </tr>
+</noscript>
+
+</table>
+</body>
+</html>
